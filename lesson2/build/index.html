@@ -47,20 +47,20 @@
 
             <ul class="list-none mx-auto my-12 flex flex-col sm:flex-row items-center gap-8">
 
-                <li class="w-200 sm:w-5/6 flex  flex-col items-center text-center border border-solid border-slate-900 dark:border-gray-100 bg-white dark:bg-slate-800 py-6 px-6 rounded-3xl shadow-xl">
+                <li class="w-200 sm:w-5/6 flex  flex-col items-center text-center border-2 border-solid border-lime-500 dark:border-gray-100 bg-white dark:bg-slate-800 py-6 px-6 rounded-3xl shadow-xl">
                     <img src="./img/eco.png" alt="eco" class="w-1/2 mb-6">
                     <p class="text-3xl text-center dark:text-white text-slate-900">Reusable = ecofriendly</p>
 
                 </li>
-                <li class="w-200sm:w-5/6 flex flex-col items-center border border-solid border-slate-900 text-center dark:border-gray-100 bg-white dark:bg-slate-800 py-6 px-6 rounded-3xl shadow-xl"> 
+                <li class="w-200sm:w-5/6 flex flex-col items-center border-2 border-solid border-lime-500 text-center dark:border-gray-100 bg-white dark:bg-slate-800 py-6 px-6 rounded-3xl shadow-xl"> 
                     <img src="./img/hot n cold.png" alt="hot and col tempreture" class="w-1/2 mb-6">
                     <p class="text-3xl text-center dark:text-white  text-slate-900">Saves temprature hot'n cold</p>
                 </li>
-                <li class="w-200 sm:w-5/6 flex flex-col items-center border border-solid border-slate-900 text-center dark:border-gray-100 bg-white dark:bg-slate-800 py-6 px-6 rounded-3xl shadow-xl">
+                <li class="w-200 sm:w-5/6 flex flex-col items-center border-2 border-solid border-lime-500 text-center dark:border-gray-100 bg-white dark:bg-slate-800 py-6 px-6 rounded-3xl shadow-xl">
                     <img src="./img/pic.png" alt="transportable tuperwares" class="w-1/2 mb-6">
                     <p class="text-3xl text-center dark:text-white  text-slate-900">U can take'm everywhere </p>
                 </li>
-                <li class="w-200 sm:w-5/6 h-250  flex flex-col items-center border border-solid border-slate-900 text-center dark:border-gray-100 bg-white dark:text-white  dark:bg-slate-800 py-6 px-6 rounded-3xl shadow-xl">
+                <li class="w-200 sm:w-5/6 h-250  flex flex-col items-center border-solid border-lime-500 border-2 text-center dark:border-gray-100 bg-white dark:text-white  dark:bg-slate-800 py-6 px-6 rounded-3xl shadow-xl">
                     <img src="./img/colors.png" alt="epic colors" class="w-1/2 mb-6">
                     <p class="text-3xl text-center dark:text-white  text-slate-900">Comes in Epic-Colors </p>
                 </li>
@@ -101,15 +101,36 @@
         <section id="contact" class="p-6 my-12 scroll-mt-16 widescreen:section-min-height tallscreen:section-min-height">
             <h2 class="text-4xl font-bold text-center sm:text-5xl mb-6 text-slate-900 dark:text-white">Contact us</h2>
             <form action="" class="max-w-3xl mx-auto text-2xl flex flex-col items-left gap-4">
-                <label for="subject">Subject:</label>
-                <input type="text" id="subject" name="subject" required minlength="3" maxlength="60" placeholder="Your subject" class="w-full text-black text-xl p-3 rounded-xl border-solid border-lime-500">
-                <label for="message">Message:</label>
-                <textarea id="message" name="message" cols="30" rows="10" minlength="3" placeholder="Your message" class="w-full text-black text-xl p-3 rounded-xl border-solid border-lime-500"></textarea>
-                <button class="bg-lime-500 hover:bg-lime-400 active:bg-lime-800 text-white p-3 w-48 rounded-xl border border-solid border-slate-900">Submit</button>
+                <label for="subject" class="font-bold">Subject:</label>
+                <input type="text" id="subject" name="subject" required minlength="3" maxlength="60" placeholder="Your subject" class="w-full border-2 text-black text-xl p-3 rounded-xl border-solid border-lime-500">
+                <label for="message" class="font-bold">Message:</label>
+                <textarea id="message" name="message" cols="30" rows="10" minlength="3" placeholder="Your message" class="w-full text-black text-xl p-3 rounded-xl border-solid border-2 border-lime-500"></textarea>
+                <button class="bg-lime-500 hover:bg-lime-400 active:bg-lime-800 text-white p-3 w-48 rounded-xl border border-none ">Submit</button>
             </form>
         </section>
     </main>
     
+    <footer id="footer" class="bg-lime-500 text-white text-xl">
+        <section class="max-w-4xl mx-auto p-4 flex flex-col sm:flex-row sm:justify-between">
+            <address>
+                <h2>Mama's Tuperwarez products, Inc.</h2>
+                420 Portemonger street<br>
+                Email: Tuperware@beans.com<br>
+                Phone: +42 8756789969 <br>
+            </address>
+            <nav class="hidden md:flex flex-col gap-2" aria-label="footer">
+                <a href="#porta" class="hover:opacity-90 font-semibold">Why</a>
+                <a href="#testa" class="hover:opacity-90 font-semibold">Testemonials</a>
+                <a href="#contact" class="hover:opacity-90 font-semibold">Contact us</a>
+
+            </nav>
+
+            <div class="flex flex-col sm:gap-2">
+                <p class="text-right">Copyright &copy; <span id="year">2023</span></p>
+                <p class="text-right">All right's reserved</p>
+            </div>
+        </section>
+    </footer>
     
 </body>
 </html>
